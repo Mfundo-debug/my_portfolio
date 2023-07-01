@@ -240,3 +240,117 @@ span {
     font-size: 1.8rem;
     margin: 1rem 0 2rem;
 }
+
+.skills {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    background: var(--bg-color);
+}
+.skills h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.skills-container .skills-box {
+    width: 30rem;
+    background: var(--secondary-bg-color);
+    padding: 3rem 2rem 4rem;
+    border: .2rem solid var(--bg-color);
+    border-radius: 2rem;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.skills-box img {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+.skills-container .skills-box:hover {
+    border: .2rem solid var(--main-color);
+    transform: scale(1.05);
+}
+.skills-box h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+.skills-box p {
+    font-size: 1.8rem;
+    margin: 1rem 0 2rem;
+}
+.skills-box .skills-bar {
+    height: 1rem;
+    background: var(--main-color);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+.skills-box .skills-bar span {
+    display: block;
+    height: 100%;
+    background: var(--text-color);
+    border-radius: 2rem;
+    width: 0;
+    transition: .5s ease-in-out;
+}
+.portfolio {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    background: var(--bg-color);
+}
+.portfolio h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.portfolio-container .portfolio-box {
+    width: 30rem;
+    background: var(--secondary-bg-color);
+    padding: 3rem 2rem 4rem;
+    border: .2rem solid var(--bg-color);
+    border-radius: 2rem;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.portfolio-box img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+.portfolio-container .portfolio-box:hover {
+    border: .2rem solid var(--main-color);
+    transform: scale(1.05);
+}
+.portfolio-box h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
