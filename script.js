@@ -1,6 +1,12 @@
 /*================ toggle icon navbar ================*/
-const navToggler = document.querySelector(".nav-toggler");
-navToggler.addEventListener("click", toggleNav);
+const menuIcon = document.querySelector(".menu-icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.addEventListener("click", () => {
+    menuIcon.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+});
+
 
 /*================ scroll sections active link ================*/
 const sections = document.querySelectorAll("section[id]");
