@@ -56,8 +56,7 @@ body {
 }
 
 .header.sticky {
-  background-color: var(--bg-color);
-  box-shadow: 0 0 1rem var(--main-color);
+  border-bottom:  .1rem solid rgba(51, 31, 204, 0.2);
 }
 #menu-icon {
     font-size: 3rem;
@@ -93,7 +92,22 @@ body {
 }
 .home-img {
     width: 75vh;
+    animation: floatImage 4s ease-in-out infinite;
 }
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
 .image-rounded-corners{
     border-radius: 30%;
     width: 100%;
@@ -502,6 +516,10 @@ span {
     section{
         padding: 10rem 6% 2rem;
     }
+    .services{
+        padding-bottom: 7rem;
+    }
+
     .footer {
         padding: 2rem 6%;
     }
@@ -519,11 +537,43 @@ span {
         background: var(--bg-color);
         border-top: .1rem solid  rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
     }  
+    .navbar.active {
+        display: block;
+    }
     .navbar a {
         display: block;
-        padding: 1rem 0;
         font-size: 2rem;
-        margin: 1rem 0;
+        margin: 3rem 0;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home-content h3 {
+        font-size: 3rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content img{
+        width: 75vw;
+        margin-top: 4rem;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about-img{
+        width: 75vw;
+        margin-top: 4rem;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
