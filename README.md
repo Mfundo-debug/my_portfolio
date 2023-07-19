@@ -1,11 +1,10 @@
 # Welcome to my Portfolio
 
 #### requirements for the website
-
 1.  HTML
 2.  CSS
 3.  typescript.js
-4. you can add booystrap if you want to
+4. you can add bootstrap if you want to
 
 #### Overview setup
  - [x] the index.html file is the main file that is used to render the website
@@ -13,6 +12,7 @@
  - [x] the script.ts file is the main file that is used to render the website
  - [x] the aboutme.html simply contains the about me section of the website
  - [x] the website was deployed using netlify
+ - [x] More changes coming out soon
 #### Output of an intro website
 
 #### ![](images/home.png)
